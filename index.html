@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iram's Dream Bakers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffaf0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px;
+            color: white;
+        }
+
+        .left {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .right ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        .right ul li {
+            margin-left: 20px;
+        }
+
+        .right ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .right ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Home Section */
+        .home-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://images.unsplash.com/photo-1604916326406-cdf222ea66b7') no-repeat center center/cover;
+            color: white;
+        }
+
+        .home-section h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .home-section p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #ffe4c4;
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: #8b4513;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Cake Rate Section */
+        .rate-cards {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff8f0;
+        }
+
+        .rate-cards h2 {
+            margin-bottom: 20px;
+            color: #8b4513;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: #ffe4c4;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffe4c4;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 20px;
+        }
+
+        .contact-section h2 {
+            color: #8b4513;
+        }
+
+        .contact-section a {
+            color: #d6336c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .coming-soon-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fffaf0;
+}
+
+.coming-soon-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #d6336c;
+  font-weight: bold;
+}
+
+.coming-soon-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card2 {
+  background-color: #ffe4c4;
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 23px rgba(0, 0, 0, 0.2);
+  filter: blur(7px);
+  transition: filter 0.4s ease;
+}
+
+.card2:hover {
+  filter: blur(0);
+  cursor: pointer;
+}
+
+.card2 h3 {
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.developer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .developer-section h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+
+  .developer-section p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .developer-section a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+
+  .developer-section a:hover {
+    text-decoration: underline;
+  }
+
+  
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Iram's Dream Bakers</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to Iram's Dream Bakers</h1>
+        <p>Freshly baked cakes made with love. Explore our mouth-watering flavors and custom cake designs made just for you.</p>
+        <a href="https://www.instagram.com/irumfaisalirum0" target="_blank" class="btn">Shop Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Iram's Dream Bakers</h2>
+        <p>Welcome to Iram's Dream Bakers – where every cake is a dream come true! Established with a passion for baking and creativity, we specialize in crafting delicious, handmade cakes for every special occasion. Whether it’s a birthday, anniversary, or just a sweet craving, we’re here to serve happiness in every bite.</p>
+        <p>We use only the finest ingredients, and our skilled team ensures that each cake is not just tasty but also beautifully presented. Customer satisfaction is our top priority — and we deliver smiles across the city.</p>
+    </section>
+
+    <!-- Cake Rate Section -->
+    <section class="rate-cards">
+        <h2> Our Cakes & Prices</h2>
+        <div class="card">
+            <h3>Chocolate Cake</h3>
+            <p>2 paund - Rs. 1800</p>
+        </div>
+        <div class="card">
+            <h3>paineapple Cake</h3>
+            <p>1 paund  - Rs. 1300</p>
+        </div>
+        <div class="card">
+            <h3>dream lava Cake</h3>
+            <p>1 box - Rs. 2500</p>
+        
+    </section>
+
+    <!-- Coming Soon Section -->
+<section class="coming-soon-section">
+    <h2> Coming Soon</h2>
+    <div class="coming-soon-wrapper">
+      <div class="card2">
+        <h3>Chocolate Cake</h3>
+        <p>Coming Soon</p>
+      </div>
+      <div class="card2">
+        <h3>Vanilla Cake</h3>
+        <p>Coming Soon</p>
+      </div>
+      <div class="card2">
+        <h3>Red Velvet</h3>
+        <p>Coming Soon</p>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have any questions or want to place an order? Get in touch with us!</p>
+        <p>Order Now on WhatsApp: <a href="https://wa.me/923021981863">Click Here</a></p>
+        <p>Call us: <a href="tel:+923021981863">0302-1981863</a></p>
+    </section>
+
+    <section class="developer-section">
+        <h2>👨‍💻 About the Developer</h2>
+        <p><strong>Name:</strong> Bilal Faisal</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, GitHub, Shopify, UI Design</p>
+        <p><strong>Experience:</strong> Front-end Developer with a passion for building elegant and responsive websites. Specialized in bakery and ecommerce themes.</p>
+        <p><strong>Projects:</strong> Iram’s Dream Bakers, Food Delivery UI, Custom Shopify Stores</p>
+        <p><strong>Contact:</strong> 
+          <a href="mailto:bilalfaisaldev@gmail.com">bilalfaisaldev@gmail.com</a> | 
+          <a href="https://github.com/bilal-faisal-pro" target="_blank">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/bilal-faisal" target="_blank">LinkedIn</a>
+        </p>
+      </section>
+
+</body>
+</html>
